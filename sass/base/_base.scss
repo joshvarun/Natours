@@ -4,8 +4,30 @@
     box-sizing: border-box;
 }
 
+body {
+    padding: 3rem;
+    
+    @include respond(tab-port) {
+        padding: 0; 
+    }
+    @include respond(phone) {
+        padding: 0;  
+    }
+}
+
 html {
     // This defines what 1rem is
     font-size: 62.5%;
+    @include respond(tab-land) {
+        font-size: 56.25%; // 1 rem = 9 px , 9/16 = 56.25%
+    }
+    @include respond(tab-port) {
+        font-size: 50%; // 1 rem = 8 px , 8/16 = 50%
+    }
+    @include respond(phone) {
+        font-size: 50%; // 1 rem = 8 px , 8/16 = 50%
+    }
+    @include respond(big-desktop) {
+        font-size: 75%; // 1 rem = 12px , 9/16 = 75%
+    }
 }
-
