@@ -677,6 +677,28 @@ body {
       float: left;
       width: 50%;
       height: 20rem; } }
+  @media (max-width: 37.5em) {
+    .popup__content {
+      width: auto;
+      display: block; }
+    .popup__left {
+      width: 100%;
+      display: none; }
+    .popup__right {
+      width: 100%;
+      display: inline-block;
+      padding: 2rem 5rem; }
+    .popup__text {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      -moz-column-count: 1;
+      -moz-column-gap: 0rem;
+      -moz-column-rule: 0;
+      column-count: 1;
+      column-gap: 0;
+      column-rule: 0; }
+    .popup__img {
+      display: none; } }
 
 .row {
   max-width: 114rem;

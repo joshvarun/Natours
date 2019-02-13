@@ -75,7 +75,6 @@
         }
     }
     @include respond(tab-port) {
-       
         &__content {
             width: auto;
             display: block;
@@ -90,6 +89,7 @@
             padding: 3rem 5rem;
         }
         &__text {
+            
             -moz-column-count: 1;
             -moz-column-gap: 0rem;
             -moz-column-rule: 0;
@@ -103,6 +103,34 @@
             width: 50%;
             height: 20rem;
         } // open states
-        
+    }
+
+    @include respond(phone) {
+        &__content {
+            width: auto;
+            display: block;
+        }
+        &__left {
+            width: 100%;
+            display: none;
+        }
+        &__right {
+            width: 100%;
+            display: inline-block;
+            padding: 2rem 5rem;
+        }
+        &__text {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            -moz-column-count: 1;
+            -moz-column-gap: 0rem;
+            -moz-column-rule: 0;
+            column-count: 1;
+            column-gap: 0;
+            column-rule: 0;
+        }
+        &__img {
+            display: none;
+        } // open states
     }
 }
