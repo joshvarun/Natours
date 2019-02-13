@@ -107,7 +107,7 @@
 
     @include respond(phone) {
         &__content {
-            width: auto;
+            width: 93%;
             display: block;
         }
         &__left {
